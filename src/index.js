@@ -54,7 +54,7 @@ client.on('messageCreate', async (message) => {
             const args = message.content.split(' ');
             const amount = parseInt(args[1]);
             if (!amount || isNaN(amount) || amount < 1 || amount > 100) {
-                message.channel.send('Você precisa especificar um número entre 1 e 100, anta do caralho.');
+                message.channel.send('Você precisa especificar um número entre 1 e 100.');
                 break;
             }
             message.channel.bulkDelete(amount + 1, true);
